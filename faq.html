@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ PAGE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+/* CSS styles go here */
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.logo {
+    width:100px;
+    height: 100px;
+    margin: 30px 20px 20px 100px;
+    transition-duration: all 2s;
+}
+
+.nav ul li {
+    font-size: larger;
+    list-style-type: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.signup-top {
+    border: 2px solid black;
+    padding: 10px 39px;
+    border-radius: 25px;
+    margin: 40px 100px 20px 40px;
+    font-family: 'Ysabeau+Office', Courier, monospace;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.signup-top:hover {
+    transform: scale(1.1);
+    background-color: #b8e4d671;
+    font-family: 'Ysabeau+Office', Courier, monospace;;
+    font-weight: bolder;
+}
+
+.faq-heading {
+    background-color: green;
+    color: #fff;
+    text-align: center;
+    padding: 20px 60px;
+    margin-bottom: 20px;
+}
+
+.faq-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line {
+    width: 90%;
+    margin: auto;
+    border: 1px solid #ccc;
+}
+
+/* Style the buttons that are used to open and close the faq-page body */
+.faq-page {
+    background-color: #fff;
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 90%;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    margin: auto;
+    text-align: center;
+}
+
+/* Light green on hover */
+.faq-page:hover {
+    background-color: #a0f3a0;
+}
+
+/* Style the faq-page panel. Note: hidden by default */
+.faq-body {
+    padding: 10px 18px; /* Adjust padding for better alignment */
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    width: 90%; /* Set a fixed width to align the description */
+    margin: auto;
+    text-align: center; /* Align the text to the left */
+}
+
+.faq-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for smaller screens */
+    .faq-heading {
+        padding: 15px 30px;
+        font-size: 24px;
+    }
+
+    .faq-page {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    .faq-body {
+        padding: 5px;
+        font-size: 16px;
+    }
+
+    .faq-page:after {
+        font-size: 11px;
+    }
+}
+
+
+</style>
+
+<body>
+    <div class="nav">
+        <a href="#hero"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <ul>
+            <li class="signup-top"><a href="websitelogin.html">Sign Up</a></li>
+        </ul>
+    </div>
+    <main>
+        <h1 class="faq-heading">FAQ'S</h1>
+        <section class="faq-container">
+
+            <hr class="hr-line">
+            <div class="faq-eight">
+                <!-- faq question -->
+                <h1 class="faq-page faq-question">How do I know if I need a therapy ?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Deciding whether therapy is right for you is a personal decision. Therapy can be beneficial for
+                        individuals facing emotional or mental health challenges, relationship issues, life
+                        transitions, or seeking personal growth. If you're unsure, consider discussing your concerns
+                        with a therapist during an initial consultation to explore how therapy might help you.
+                        To help you better with this we even have a 2 minutes assesment on our website. </p>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="faq-seven">
+                <!-- faq question -->
+                <h1 class="faq-page faq-question">Are onsite therapists more qualified than the virtual therapists ?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>We understand the confusion so to make it more credible we have specified the 
+                        qulaifications of therpaists.That would help you make better choices</p>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="faq-six">
+                <!-- faq question -->
+                <h1 class="faq-page faq-question">How long does a therapy session usually last?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Therapy session durations can vary depending on the therapist and whether its virtual or onsite therapy.
+                        Typically, virtual therapy sessions last around 45 to 60 minutes. However, onsite counselling depends on
+                        therapists who may offer longer or shorter sessions based on individual needs and preferences.</p>
+                </div>
+            </div>
+            
+            <hr class="hr-line">
+            <div class="faq-nine">
+                <!-- faq question -->
+                <h1 class="faq-page faq-question">What can I expect during my first therapy session?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>The first therapy session, also known as the intake session, is typically an opportunity for
+                        you and the therapist to get to know each other. The therapist may ask about your reasons for
+                        seeking therapy, your personal history, and any specific goals you have. It's a chance for you
+                        to discuss your concerns and expectations for therapy, and the therapist will explain the
+                        therapeutic process and answer any questions you may have.</p>
+                </div>
+            </div>
+
+            <hr class="hr-line">
+            <div class="faq-five">
+                <!-- faq question -->
+                <h1 class="faq-page faq-question">Is my personal information secure?</h1>
+                <!-- faq answer -->
+                <div class="faq-body">
+                    <p>Your personal information is treated with utmost confidentiality. Therapists follow strict
+                        privacy and data protection guidelines to ensure the security of your information. Your
+                        information is not shared with anyone unless required by law or with your explicit consent.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+<!-- Add this script before the closing </body> tag -->
+<script>
+    // Get all the elements with the class "faq-question"
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    // Add a click event listener to each FAQ question
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            // Get the corresponding faq-body element for this question
+            const faqBody = question.nextElementSibling;
+
+            // Check if the clicked FAQ is already active (open)
+            const isActive = question.classList.contains('active');
+
+            // Close all other open FAQs before opening the clicked one
+            faqQuestions.forEach(q => {
+                const body = q.nextElementSibling;
+                if (q !== question) {
+                    q.classList.remove('active');
+                    body.style.display = 'none';
+                }
+            });
+
+            // Toggle the active class and show/hide the faq-body
+            if (isActive) {
+                question.classList.remove('active');
+                faqBody.style.display = 'none';
+            } else {
+                question.classList.add('active');
+                faqBody.style.display = 'block';
+            }
+        });
+    });
+</script>
+</body>
+
+</html>

@@ -1,0 +1,486 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Comfortaa:wght@500&family=Crafty+Girls&family=Yatra+One&family=Yomogi&family=Ysabeau+Office:wght@1;400&display=swap');
+
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ysabeau+Office', Courier, monospace;
+    
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.5 ease;
+}
+
+a:hover {
+    transform: scale(1.05);
+}
+.main-top {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-image: url(images/greenbg.png);
+    background-size: cover;
+    background-position: center;
+    perspective: 10px;
+    transform-style: preserve-3d;
+    overflow-y: auto;
+    transform: translateZ(-10px);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+
+.logo {
+    width:100px;
+    height: 100px;
+    margin: 30px 20px 20px 100px;
+    transition-duration: all 2s;
+}
+
+.nav ul li {
+    font-size: larger;
+    list-style-type: none;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.signup-top {
+    border: 2px solid black;
+    padding: 10px 39px;
+    border-radius: 25px;
+    margin: 40px 100px 20px 40px;
+    font-family: 'Ysabeau+Office', Courier, monospace;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.signup-top:hover {
+    transform: scale(1.1);
+    background-color: #b8e4d671;
+    font-family: 'Ysabeau+Office', Courier, monospace;;
+    font-weight: bolder;
+}
+
+.hero {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 75vh;
+    background-size: cover;
+    font-weight: bolder;
+}
+
+.hero h1{
+    
+    text-align: center;
+    font-family:'Comfortaa','Yatra One', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    letter-spacing: -2%;
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 3px #EAD3CA;
+}
+
+.arrow {
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    border: 3px solid black;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.arrow:hover {
+    transform: scale(1.1);
+    background-color: #EAD3CA;
+    font-weight: bolder;
+}
+
+.second-box{
+    min-height: 50vh;
+}
+
+.container {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.5s ease;
+  }
+  
+.box:hover {
+    transform: scale(1.1);
+}
+
+  .box img {
+    max-width: 200px;
+    height: auto;
+  }
+  
+  p {
+    margin-top: 10px;
+  }
+
+
+/* .third-box{
+    height: 40vh;
+    background-image: url(images/blue-bottom.png);
+    background-size: 70%;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-color: #FFFAF6;
+    
+} */
+
+.navbutton{
+    padding-top: 70px;
+    padding-left: 140px;
+}
+
+/*buttons are assessment buttons */
+
+.bigbutton{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.assessment-button {
+    font-family: 'Ysabeau+Office', Courier, monospace;;
+    background-color: rgba(255, 255, 255, 0.192);
+    border: 1px solid white; 
+    color: black; 
+    padding: 20px 70px; 
+    font-size: 24px;
+    cursor: pointer; 
+    border-radius: 50px; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2); 
+    transition: all 0.5s ease;
+    font-weight: bold;
+}
+
+.assessment-button:hover {
+    background-color: #b8e4d671; 
+    font-weight: bolder;
+    transform: scale(1.2);
+}
+
+.herobutton {
+    display: none;
+}
+
+.navbutton{
+    box-shadow: none; 
+    border: none;
+    border-radius: 0;
+}
+
+.about{
+    display: flex;
+    justify-content: space-evenly;
+    height:50px;
+}
+
+.about a {
+    color: black;
+    font-family: inherit;
+}
+.about a:hover {
+    font-weight: bolder;
+}
+
+footer{
+    height:50px;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 20px 0;
+}
+
+.popup{
+    background-color:rgb(126, 160, 58);
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius:5%;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align:right;
+    box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.5); 
+    z-index: 2;
+}
+
+.popup p{
+    text-align:left;
+}
+.popup h2{
+    text-align:left;
+
+}
+.popup button {
+    text-align: right;
+}
+.popup button #close{
+    position:absolute;
+    cursor: pointer;
+    background-color: lightgray;
+    
+}
+
+.popup img{
+    float: left;
+    margin: 80px 30px 0px 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+#close
+{
+    border-radius: 5px;
+    padding: 5px 10px ;
+    transition-delay: all 0.5s;
+    background-color: lightgray;
+}
+
+#close:hover {
+    background-color: rgba(173, 216, 230, 0.731);
+}
+
+#okay {
+    border-radius: 10px;
+    padding: 15px;
+    transition-delay: all 0.5s;
+    margin-right: 140px;
+}
+
+#okay:hover{
+    background-color: rgba(173, 216, 230, 0.658);
+}
+
+.popup a{
+    background-color: lightgray;
+
+}
+
+.image-sliderfade {
+	display: none;
+}
+
+img {
+	vertical-align: middle;
+}
+
+* {box-sizing:border-box}
+
+.third-box {
+    padding: 20px 0;
+}
+
+
+.slideshow-container {
+    max-width:100%;
+    overflow: hidden;
+    position: relative;
+    width: 60%; }
+
+.mySlides img {
+    width: 100%;
+    align-items: center;
+}
+
+/* Adjust the style for the dots/circles */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 10px 2px;
+    background-color: #83beabfc;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.6s ease;
+}
+
+/* Active dot style */
+.active {
+    background-color: #f4a789;
+    box-shadow: 0 4px 5px rgba(107, 106, 106, 0.5);
+}
+
+.dot:hover{
+    cursor: pointer;
+}
+
+.text{
+    position: absolute;
+            top: 17px;
+            left: 50px;
+            color: #333;
+}
+
+
+/* Contact us */
+
+.main-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+main{
+    background-image: url();
+}
+
+.contact-container {
+    background-color: rgb(246, 227, 204);
+    padding: 20px 20px 20px 25%;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 14px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button[type="submit"]:hover {
+    background-color: #555;
+}
+.hide{
+    opacity: 0;
+}
+.hidden {
+    opacity: 0;
+    transition: all 1.5s;
+    transform: translateY(-30px);
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.blur {
+    filter: blur(4px);
+    opacity: 0;
+    transition: all 1.5s;
+}
+
+.unblur{
+    opacity: 1;
+    filter: blur(0);
+}
+
+@media screen and (max-width: 1250px) {
+    .navbutton{
+        display:none;
+
+    }
+    .herobutton {
+        display:inline;
+        padding-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 850px){
+    .hero {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        gap: 20px;
+    }
+
+    .hero h1{
+        font-size: 50px;
+    }
+    .second-box{
+        height: auto;
+    }
+    .container {
+        display: flex;
+        height: auto;
+      }
+    
+    .assessment-button {
+        display: flex;
+        padding: 20px 40px; 
+        font-weight: bold;
+    }
+    .navbutton{
+        display:none;
+
+    }
+    .herobutton {
+        display:flex;
+        position: absolute;
+        padding-top: 50px;
+        top: 140px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbutton{
+        display:none;
+
+    }
+    .herobutton {
+        display:none;
+    }
+}

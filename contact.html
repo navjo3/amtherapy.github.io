@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Therapy.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#hero"><img class="logo" src="images/logo.png" alt="logo"></a>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Fill out the form below to get in touch with us.</p>
+                <form action="submit_form.php" method="post" onsubmit="return validateForm()" class="myForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span id="nameError" class="error"></span>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="emailError" class="error"></span>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span id="messageError" class="error"></span>
+                    <br>
+                    <button type="submit" >Submit</button>
+                </form>
+
+            </div>
+            <div id="thankYouMessage" class="hide">Thank you for submitting!</div>
+        </section>
+    </main>
+    
+    <script>
+        function validateForm() {
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+            
+            var nameError = document.getElementById("nameError");
+            var emailError = document.getElementById("emailError");
+            var messageError = document.getElementById("messageError");
+            
+            nameError.textContent = "";
+            emailError.textContent = "";
+            messageError.textContent = "";
+            
+            var valid = true;
+            
+            if (name === "") {
+                nameError.textContent = "Name is required";
+                valid = false;
+            }
+            
+            if (email === "") {
+                emailError.textContent = "Email is required";
+                valid = false;
+            } else if (!isValidEmail(email)) {
+                emailError.textContent = "Invalid email format";
+                valid = false;
+            }
+            
+            if (message === "") {
+                messageError.textContent = "Message is required";
+                valid = false;
+            }
+            
+            return valid;
+        }
+        
+        function isValidEmail(email) {
+            // Basic email format validation using a regular expression
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            return emailPattern.test(email);
+        }
+
+        document.getElementById("myForm").addEventListener("submit", function (event) {
+        event.preventDefault();
+        setTimeout(function (){
+        document.getElementById("thankYouMessage").classList.remove("hide");})
+        });
+
+        
+    </script>
+</body>
+</html>

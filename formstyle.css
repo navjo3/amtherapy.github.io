@@ -1,0 +1,72 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Comfortaa:wght@500&family=Crafty+Girls&family=Yatra+One&family=Yomogi&family=Ysabeau+Office:wght@1;400&display=swap');
+
+
+        body{
+            font-family: 'Yatra One';
+            background-color: #B6E0BF;
+            margin-top: 0px;
+            background-image: linear-gradient(#97D5BC, #B6E0BF);
+        }
+        .container{
+            margin-top: 5%;
+            background-color: rgba(255, 255, 255, 0.642);
+            padding: 50px;
+            border-radius: 50px;
+            background-position: center;
+            background-size: cover;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0.2, 0.3); 
+            
+        }
+
+        label {
+            font-weight: normal;
+        }
+
+                
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            font-size: 15px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.338);
+            z-index: 1;
+        }
+
+        .logo {
+            width:100px;
+            height: 100px;
+            margin: 30px 20px 20px 100px;
+        }
+
+        .nav ul li {
+            font-size: larger;
+            list-style-type: none;
+        }
+
+        .nav ul li a{
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .signup-top {
+            border: 2px solid black;
+            padding: 10px 39px;
+            border-radius: 25px;
+            margin: 40px 100px 20px 40px;
+            font-family: 'Ysabeau+Office', Courier, monospace;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .signup-top:hover {
+            transform: scale(1.1);
+            background-color: #b8e4d671;
+            font-family: 'Ysabeau+Office', Courier, monospace;;
+            font-weight: bolder;
+        }
+
+        .form-group {
+            margin-top: 10px;
+        }
